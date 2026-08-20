@@ -32,7 +32,7 @@ tools:
 steps:
   - name: Prefetch repository status data
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
       REPO: ${{ github.repository }}
     run: |
       mkdir -p /tmp/gh-aw/agent /tmp/gh-aw/python/{data,charts,artifacts}
