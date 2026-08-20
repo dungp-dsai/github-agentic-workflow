@@ -4,7 +4,10 @@ description: Generate periodic status summaries
 on:
   schedule:
     - cron: "weekly on monday" # Fuzzy weekly schedule (~Monday UTC)
+  pull_request:
+    types: [closed]
   workflow_dispatch:
+if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
 permissions:
   actions: read
   contents: read
