@@ -18,7 +18,7 @@ safe-outputs:
     labels: [hello-world, automated]
     close-older-issues: true
     expires: 7d
-model: gpt-4.1-mini
+model: gpt-4.1
 engine:
   id: copilot
   version: latest
