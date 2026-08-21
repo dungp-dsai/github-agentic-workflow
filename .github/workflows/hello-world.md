@@ -17,7 +17,11 @@ safe-outputs:
     title-prefix: "Hello World: "
     labels: [hello-world, automated]
     close-older-issues: true
-    expires: 7
+    expires: 7d
+model: gpt-4.1-mini
+engine:
+  id: copilot
+  version: latest
 ---
 
 # Hello World
