@@ -22,6 +22,9 @@ model: gpt-4.1
 engine:
   id: copilot
   version: latest
+
+skills:
+  - .github/skills/say-hello
 ---
 
 # Hello World
